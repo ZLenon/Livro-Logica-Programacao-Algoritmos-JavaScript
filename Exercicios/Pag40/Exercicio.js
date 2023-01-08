@@ -9,3 +9,5 @@ function calcDouble(num) {
   return num * 2;
 };
 console.log(calcDouble(10));
+
+module.exports = calcDouble;
