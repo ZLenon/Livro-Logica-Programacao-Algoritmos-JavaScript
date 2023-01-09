@@ -1,5 +1,5 @@
 import { expect, test } from '@jest/globals';
-const calcDouble = require('./sum');
+const calcDouble = require('../Exercicios/Pag40/Exercicio');
 
 describe('', () => {
   test('', () => {
