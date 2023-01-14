@@ -1,1 +1,1 @@
-/* https://www.alura.com.br/artigos/alterando-css-com-javascript */
+/* https://www.alura.com.br/artigos/alterando-css-com-javascript  */
