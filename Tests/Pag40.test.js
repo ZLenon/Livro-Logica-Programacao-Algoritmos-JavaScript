@@ -1,7 +1,7 @@
 //import { expect, jest, test } from '@jest/globals';
 const calcDouble = require('../Exercicios/Pag40/Exercicio');
 
-describe('Test', () => {
+describe('Pagina 40', () => {
   test('testando se é uma fução', () => {
     expect(typeof calcDouble).toBe("function");
   });
