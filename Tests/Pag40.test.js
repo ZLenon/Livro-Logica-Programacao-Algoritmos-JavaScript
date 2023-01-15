@@ -1,4 +1,5 @@
 //import { expect, jest, test } from '@jest/globals';
+const { expect } = require('@jest/globals')
 const calcDouble = require('../Exercicios/Pag40/Exercicio');
 
 describe('Pagina 40', () => {
