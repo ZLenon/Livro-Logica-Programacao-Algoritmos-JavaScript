@@ -13,37 +13,33 @@ function calcPeso() {
   const feminino = genderF.checked;
   const altura = Number(inAltura.value);
 
-  return spanPeso.innerText = name
-/* 
-  if (name === '' || (masculino === false && feminino === false)) {
+  spanPeso.innerText = name
+
+/*   if (name === '' || (masculino === false && feminino === false)) {
     alert('Por favor, informe um nome e selecione um sexo...');
     nameInput.focus(); 
-    return;
-  }
-  if (altura === 0 || inNaN(altura)) {
+  } */
+/*   if (altura === 0 || inNaN(altura)) {
     alert('Por favor, informe a altura corretamente...');
-    altura.focus();
-    return;
-  }
+    inAltura.focus();
+  } */
   if (masculino) {
     const peso = 22 * Math.pow(altura, 2);
-    return spanPeso.textContent = `${nome}: seu peso ideal é ${peso.toFixed(3)}Kg`;
+    spanPeso.innerText = `${nome}: seu peso ideal é ${peso.toFixed(3)}Kg`;
   } else {
     const peso = 21 * Math.pow(altura, 2);
-    return spanPeso.textContent = `${nome}: seu peso ideal é ${peso.toFixed(3)}Kg`;
+    spanPeso.innerText = `${nome}: seu peso ideal é ${peso.toFixed(3)}Kg`;
 
   }
- */
+
 
 }
 
 function clearInputs() {
-  const name = nameInput.value;
-  const masculino = genderM.checked;
-  const feminino = genderF.checked;
-  const altura = Number(inAltura.value);
-
-  return nameInput.value = '';
+  genderM.checked = false;
+  genderF.checked = false;
+  inAltura.value = '';
+  nameInput.value = '';
 }
 
 btnCalPesos.addEventListener('click', calcPeso );
