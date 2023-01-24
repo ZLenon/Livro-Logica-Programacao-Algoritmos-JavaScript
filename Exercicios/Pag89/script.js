@@ -14,6 +14,13 @@ function calcPeso() {
   const feminino = genderF.checked;
   const altura = Number(inAltura.value);  
 
+  if (masculino) {
+    const peso = 22 * Math.pow(altura, 2);
+    spanPeso.innerText = `${name} : Seu Peso ideal é ${peso.toFixed(2)} Kg`;
+  } else {
+    const peso = 21 * Math.pow(altura, 2);
+    spanPeso.innerText = name + ': Seu Peso ideal é ' + peso.toFixed(2) + ' Kg';
+  }
   if (name === '' || (masculino === false && feminino === false)) {
     alert('Por favor, informe um nome e selecione um sexo...');
     nameInput.focus(); 
@@ -21,13 +28,6 @@ function calcPeso() {
   if (altura === 0 || inNaN(altura)) {
     alert('Por favor, informe a altura corretamente...');
     inAltura.focus();
-  }
-  if (masculino) {
-    const peso = 22 * Math.pow(altura, 2);
-    spanPeso.innerText = `${name} : Seu Peso ideal é ${peso.toFixed(2)} Kg`;
-  } else {
-    const peso = 21 * Math.pow(altura, 2);
-    spanPeso.innerText = name + ': Seu Peso ideal é ' + peso.toFixed(2) + ' Kg';
   }
 }
 
