@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programa Par ou Impar</title>
+  <!-- minify -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <!-- latest -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- core style only -->
+  <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -13,14 +20,16 @@
     Numero: <input type="text" name="numero" id="numero">
   </label>
   <br>
+  <br>
   <label for="bottao par impar">
-    <button id="bottonParImpar">Verificar Par ou impar</button>
+    <button type="button" class="nes-btn is-success" id="bottonParImpar">Verificar Par ou impar</button>
   </label>
+  <br>
   <br>
   <label for="mensagem de resposta">
     Resposta: <span id="resposta"></span>
   </label>
-  <script type="module" src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
