@@ -1,0 +1,61 @@
+body {
+  background-color: silver;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, rgb(100, 100, 100), green);
+}
+
+main {
+  display: flex;    
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+label {
+  color: white;
+  font-size: 21px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input:placeholder-shown {
+  font-weight: bold; 
+  text-indent: 20px;
+  text-transform: capitalize;
+}
+
+#btnConversor {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  font-weight: bold; 
+  background-color: blueviolet;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+#btnConversor:hover {
+  background-color: rgb(150, 80, 200);
+  color: white;
+  box-shadow: 10px 10px 15px black;
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  background-color: green;
+  justify-content: center;
+  padding: 25px;
+  margin-left: 30%;
+  margin-right: 30%;
+  box-shadow: inset 0px 0px 20px 10px black;
+  transition: 0.5;
+  border-radius: 15px;
+  font-weight: bold;
+  color: white;
+}

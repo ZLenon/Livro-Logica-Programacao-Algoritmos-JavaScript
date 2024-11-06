@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercicio</title>
-</head>
+  <body>
+    <header>
+      <h1>Video Locadora</h1>
+    </header>
+    <main>
+      <p>
+        <label for="Titulo">Titulo do Filme:-</label>
+        <input type="text" id="Titulo" placeholder="Titulo do filme" />
+      </p>
+      <p>
+        <label for="Duracao">Duração em (min):-</label>
+        <input type="number" id="Duracao" placeholder="Duração do filme" />
+      </p>
+      <button type="button" id="btnConversor">
+        Converter em Horas e Minutos
+      </button>
+      <br />
+      <br />
+    </main>
+    <footer>
+      <span id="nomeTitulo"></span>
+      <br />
+      <span id="horasConvertidas"></span>
+    </footer>
 
-<body>
-  <h1>Video Locadora</h1>
-  <p>
-    Titulo do Filme:-
-    <input type="text" id="Titulo" placeholder="Titulo do filme" />
-  </p>
-  <p>
-    Duração em (min):-
-    <input type="number" id="Duracao" placeholder="Duração do filme" />
-  </p>
-  <button type="button" id="btnConversor">Converter em Horas e Minutos</button>
-  <br>
-  <br>
-  <span id="nomeTitulo"></span>
-  <br>
-  <span id="horasConvertidas"></span>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
