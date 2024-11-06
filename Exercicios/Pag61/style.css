@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(192, 192, 192);
+}
+h1 {
+  text-align: center;
+  background-color: rgb(160, 160, 160);
+  padding: 10px;
+  color: white;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+div {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div text {
+  font-size: 26px;
+  color: white;
+}
+#nome {
+  border: 2px solid black;
+  margin: 5px;
+}
+
+#mostrar {
+  background-color: rgb(100, 100, 255);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+#mostrar:hover {
+  background-color: rgb(125, 125, 253);
+  color: white;
+}
+
+p {
+  text-align: center;
+  box-shadow: 0px 0px 20px 4px black;
+  padding: 10px;
+}
