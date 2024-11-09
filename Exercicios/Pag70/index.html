@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio pag70</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercicio pag70</title>
-</head>
-
-<body>
-  <h1>Revenda de Veiculo JS</h1>
-  <p>
-    Veiculo:-
-    <input type="text" id="veiculo" />
-  </p>
-  <p>
-    Preço R$:-
-    <input type="number" id="preco" />
-  </p>
-  <button id="btn">Ver Promoção</button>
-  <br>
-  <br>
-  <span id="promocao"></span>
-  <br>
-  <span id="entrada"></span>
-  <br>
-  <span id="parcelado"></span>
-  <script src="script.js"></script>
-</body>
-
+  <body>
+    <div class="form">
+      <header>
+        <h1>Revenda de Veiculo JS</h1>
+      </header>
+      <main>
+        <p>
+          Veiculo:-
+          <input type="text" id="veiculo" placeholder="Marca" />
+        </p>
+        <p>
+          Preço R$:-
+          <input type="number" id="preco" placeholder="Reais" />
+        </p>
+        <button id="btn">Ver Promoção</button>
+      </main>
+      <br />
+      <br />
+      <footer>
+        <span id="promocao"></span>
+        <br />
+        <span id="entrada"></span>
+        <br />
+        <span id="parcelado"></span>
+      </footer>
+    </div>
+  </body>
 </html>
